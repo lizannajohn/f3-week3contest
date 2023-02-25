@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Week 3 Contest </title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="left">
+            <a href="index.html"> Teacher's Portal </a>
+        </div>
+        <div class="right">
+            <ul>
+                <li> <a href="index.html"> Sign Up </a> </li>
+                <li> <a href="login.html"> Login </a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Sign Up Form -->
+    <h2 id="heading"> Teacher's Signup </h2>
+    <form id="signup">
+        
+        <input type="text" name="name" id="fullName" value="" placeholder="Full Name">
+
+        <input type="email" name="email id" id="email" value="" placeholder="Email" novalidate/>
+
+        <input type="password" name="pwd" id="password" value="" placeholder="Password">
+
+        <input type="password" name="confirm pwd" id="confPassword" value="" placeholder="Confirm Password">
+
+        <div class="hide" id="alert"> </div>
+
+        <button type="submit" id="submit" formnovalidate="formnovalidate"> Signup </button>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

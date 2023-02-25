@@ -1,0 +1,81 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hide
+{
+    display: none;
+}
+
+/* Index Page CSS */
+.navbar
+{
+    background-color: black;
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.navbar .right ul li
+{
+    display: inline;
+}
+
+.navbar .left a,
+.navbar .right ul li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+}
+
+#heading
+{
+    margin: 10px 0 0 10px;
+}
+
+input
+{
+    display: block;
+    margin: 10px 0 0 10px;
+    width: 97%;
+    height: 3em;
+    padding: 5px;
+    font-size: 15px;
+}
+
+#submit, #logout
+{
+    margin: 10px 0 0 10px;
+    width: 15%;
+    height: 3em;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+
+#alert
+{
+    background-color: lightgray;
+    color: red;
+    margin: 10px 0 0 10px;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid darkgray;
+    width: 96.5%;
+    font-weight: 700;
+}
+
+/* Login Page CSS */
+
+/* Dashboard Page CSS */
+.para
+{
+    margin: 10px 0 0 10px;
+    font-size: 20px;
+}

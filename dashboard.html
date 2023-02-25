@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dashboard </title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+     <!-- Navbar -->
+     <div class="navbar">
+        <div class="left">
+            <a href="index.html"> Teacher's Portal </a>
+        </div>
+        <div class="right">
+            <ul>
+                <li> <a href="index.html"> Sign Up </a> </li>
+                <li> <a href="login.html"> Login </a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 id="heading"> Teacher's Dashboard </h2>
+    <p class="para"> Welcome back <span id="username">  </span> </p>
+    <p class="para"> Your Email ID: <span id="useremail">  </span> </p>
+
+    
+    <h2 id="heading"> Change Password </h2>
+    <form id="change-pwd">
+
+        <input type="password" name="pwd" id="oldpwd" value="" placeholder="Old Password">
+
+        <input type="password" name="pwd" id="newpwd" value="" placeholder="New Password">
+
+        <input type="password" name="pwd" id="conf-newpwd" value="" placeholder="Confirm New Password">
+
+        <div class="hide" id="alert"> hiii </div>
+
+        <button type="submit" id="submit" formnovalidate="formnovalidate"> Change </button>
+
+    </form>
+
+    <button id="logout"> Logout </button>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
