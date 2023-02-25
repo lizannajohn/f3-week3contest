@@ -2,6 +2,8 @@ console.log("Dashboard");
 
 const currentUser = JSON.parse(localStorage.getItem('currentUser'))
 
+// const users = JSON.parse(localStorage.getItem('users'))
+
 if(!currentUser)
 {
     window.location.href = "login.html"
@@ -49,6 +51,15 @@ changepwdform.addEventListener("submit", function(e)
     {
         currentUser.pwd = newpwd;
         localStorage.setItem('currentUser', JSON.stringify(currentUser))
+
+        const users = JSON.parse(localStorage.getItem('users'))
+        let userIndex = users.findIndex(user => user.email === currentUser.email)
+
+        if(users[userIndex].pwd === oldpwd)
+        {
+            users[userIndex].pwd = newpwd
+            localStorage.setItem('users', JSON.stringify(users))
+        }
 
         alert.classList.remove("hide");
         alert.innerHTML = "Password changed SUCCESSFULLY!"
